@@ -5,6 +5,7 @@ public class JobManager {
         Scanner input = new Scanner(System.in);
         System.out.println("Hello, Job Manager");
         System.out.println("This is a Java Project");
-        System.out.println("A good java program");
+        System.out.print("A good java program");
+        System.out.println("runs efficiently");
     }
 }
