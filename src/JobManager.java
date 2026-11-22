@@ -7,6 +7,6 @@ public class JobManager {
         System.out.println("This is a Java Project");
         System.out.print("A good java program");
         System.out.print("runs efficiently");
-        System.out.print("without errors");
+        System.out.print("without any errors");
     }
 }
