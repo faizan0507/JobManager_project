@@ -54,9 +54,7 @@ public class JobManager {
     static void viewJobs() {}
     static void searchJob() {}
     static void updateJob() {System.out.println("afeera");}
-    static void deleteJob() {
-        System.out.println("Mursaleen");
-    }
+    static void deleteJob() {System.out.println("Mursaleen");}
     static void jobSummary() {}
 
-}   
+}
