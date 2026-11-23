@@ -50,10 +50,7 @@ public class JobManager {
         System.out.println("6. Job Summary");
         System.out.println("0. Exit");
     }
-    static void addJob() {
-        System.out.println("hello");
-        System.out.println("hello");
-    }
+    static void addJob() {}
     static void viewJobs() {}
     static void searchJob() {}
     static void updateJob() {System.out.println("afeera");}
