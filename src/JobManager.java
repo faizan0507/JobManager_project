@@ -51,8 +51,7 @@ public class JobManager {
         System.out.println("0. Exit");
     }
     static void addJob() {
-        System.out.println("hello");
-        System.out.println("hello");
+        System.out.println("Komal");
     }
     static void viewJobs() {}
     static void searchJob() {}
