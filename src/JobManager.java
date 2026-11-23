@@ -8,13 +8,34 @@ public class JobManager {
         do {
             showMenu();
             System.out.print("\nEnter your choice: ");
-            choice = input.nextInt();
+            choice = Integer.parseInt(input.nextLine().trim());
 
             switch(choice) {
-
+                case 1:
+                    addJob();
+                    break;
+                case 2:
+                    viewJobs();
+                    break;
+                case 3:
+                    searchJob();
+                    break;
+                case 4:
+                    updateJob();
+                    break;
+                case 5:
+                    deleteJob();
+                    break;
+                case 6:
+                    jobSummary();
+                    break;
+                case 0:
+                    System.out.println("\nThank you for using our program :)");
+                    System.out.println("Goodbye!");
+                    break;
+                default:
+                    System.out.println("Invalid Choice!");
             }
-
-
 
         }while(choice != 0);
     }
@@ -33,7 +54,9 @@ public class JobManager {
     static void viewJobs() {}
     static void searchJob() {}
     static void updateJob() {}
-    static void deleteJob() {}
+    static void deleteJob() {
+        System.out.println("Mursaleen");
+    }
     static void jobSummary() {}
 
 }
