@@ -7,7 +7,7 @@ public class JobManager {
         int choice;
         do {
             showMenu();
-            System.out.print("\nEnter your choice: ");
+            System.out.println("\nEnter your choice from the given menu: ");
             choice = Integer.parseInt(input.nextLine().trim());
 
             switch(choice) {
