@@ -7,7 +7,7 @@ public class JobManager {
         int choice;
         do {
             showMenu();
-            System.out.println("\nEnter your choice from the given menu: ");
+            System.out.print("\nEnter your choice: ");
             choice = Integer.parseInt(input.nextLine().trim());
 
             switch(choice) {
@@ -50,11 +50,16 @@ public class JobManager {
         System.out.println("6. Job Summary");
         System.out.println("0. Exit");
     }
-    static void addJob() {}
+    static void addJob() {
+        System.out.println("hello");
+        System.out.println("hello");
+    }
     static void viewJobs() {}
     static void searchJob() {}
     static void updateJob() {System.out.println("afeera");}
-    static void deleteJob() {System.out.println("Mursaleen");}
+    static void deleteJob() {
+        System.out.println("Mursaleen");
+    }
     static void jobSummary() {}
 
 }
