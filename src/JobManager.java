@@ -52,6 +52,7 @@ public class JobManager {
     }
     static void addJob() {
         System.out.println("hello");
+        System.out.println("hello");
     }
     static void viewJobs() {}
     static void searchJob() {}
