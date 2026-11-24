@@ -2,6 +2,10 @@ import java.util.Scanner;
 public class JobManager {
 
     static Scanner input = new Scanner(System.in);
+    static final int MAX = 100;
+    static int jobCount = 0;
+    static String[] status = new String[MAX];
+    static String[] jobTitles = new String[MAX];
 
     public static void main (String[] args) {
         int choice;
