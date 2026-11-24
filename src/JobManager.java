@@ -7,11 +7,18 @@ public class JobManager {
     static String[] status = new String[MAX];
     static String[] jobTitles = new String[MAX];
 
+    // All these static Scanner object, variables
+    // and arrays was declared outside main function
+    // Any of the member does not need to declare and create these variables
+    // again in every function. These are global scoped variables and arrays
+    // means you can use everywhere in a JobManager class without declaring again
+    // in every function including main and other six user-defined functions.
+
     public static void main (String[] args) {
         int choice;
         do {
             showMenu();
-            System.out.print("\n\nEnter your choice from the given menu: ");
+            System.out.print("\nEnter your choice from the given menu: ");
             choice = Integer.parseInt(input.nextLine().trim());
 
             switch(choice) {
