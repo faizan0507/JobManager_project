@@ -8,6 +8,5 @@ public class JobManager {
         System.out.print("A good java program");
         System.out.print("runs efficiently");
         System.out.print("without any errors");
-        
     }
 }
