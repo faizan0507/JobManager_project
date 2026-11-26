@@ -2,6 +2,11 @@ import java.util.Scanner;
 public class JobManager {
 
     static Scanner input = new Scanner(System.in);
+    static String[] titles = new String[100];
+    static String[] descriptions = new String[100];
+    static String[] dates = new String[100];
+    static String[] statuses = new String[100];
+    static int jobCount = 0;
 
     public static void main (String[] args) {
         int choice;
@@ -50,8 +55,42 @@ public class JobManager {
         System.out.println("6. Job Summary");
         System.out.println("0. Exit");
     }
+    static String askForText(String message) {
+        String text="";
+        while(text.isEmpty()){
+            System.out.print(message);
+            text=input.nextLine().trim();
+            if(text.isEmpty()){
+                System.out.println("This cannot be empty.Please try again.");
+            }
+
+        }
+        return text;
+    }
+    static void storeJob(String title,String description,String date,String status){
+        titles[jobCount]=title;
+        descriptions[jobCount]=description;
+        dates[jobCount]=date;
+        statuses[jobCount]=status;
+        jobCount++;
+    }
+
+
     static void addJob() {
-        System.out.println("Komal");
+        if(jobCount>=titles.length){
+            System.out.println("Sorry,the job list is full!");
+            return;
+        }
+        System.out.println("\n==== ADD NEW JOB ====");
+        String title=askForText("Enter job title: ");
+        String description = askForText("Enter job description: ");
+        String date = askForText("Enter job date(e.g 25-11-2026): ");
+        storeJob(title,description,date,"Pending");
+
+        System.out.println("\nJob added successfully!");
+        System.out.println("Title: " + title);
+        System.out.println("Status: Pending");
+
     }
     static void viewJobs() {}
     static void searchJob() {}
