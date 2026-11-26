@@ -64,12 +64,20 @@ public class JobManager {
     static void addJob() {
         System.out.println("Komal");
     }
-    static void viewJobs() {}
-    static void searchJob() {}
-    static void updateJob() {System.out.println("afeera");}
+    static void viewJobs() {
+        System.out.println("Hafsa");
+    }
+    static void searchJob() {
+        System.out.println("Hafsa");
+    }
+    static void updateJob() {
+        System.out.println("afeera");
+    }
     static void deleteJob() {
         System.out.println("Mursaleen");
     }
-    static void jobSummary() {}
+    static void jobSummary() {
+        System.out.println("Mursaleen");
+    }
 
 }
