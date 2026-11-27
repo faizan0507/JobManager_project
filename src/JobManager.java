@@ -7,6 +7,8 @@ public class JobManager {
     static String[] statuses = new String[100];
     static int jobCount = 0;
 
+    static Scanner input = new Scanner(System.in);
+
     public static void main (String[] args) {
         int choice;
         do {
@@ -89,6 +91,8 @@ public class JobManager {
         System.out.println("\nJob added successfully!");
         System.out.println("Title: " + title);
         System.out.println("Status: Pending");
+
+    }
 
     }
     static void viewJobs() {}
