@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class JobManager {
+
     static Scanner input = new Scanner(System.in);
     static String[] titles = new String[100];
     static String[] descriptions = new String[100];
@@ -7,7 +8,8 @@ public class JobManager {
     static String[] statuses = new String[100];
     static int jobCount = 0;
 
-    static Scanner input = new Scanner(System.in);
+    // Dont do any change in class. Write code in your own assigned methods.
+    // If  you want any change ask me (Faizan) for the changing in class
 
     public static void main (String[] args) {
         int choice;
@@ -94,7 +96,6 @@ public class JobManager {
 
     }
 
-    }
     static void viewJobs() {}
     static void searchJob() {}
     static void updateJob() {System.out.println("afeera");}
