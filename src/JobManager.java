@@ -65,7 +65,7 @@ public class JobManager {
         System.out.println("Komal");
     }
     static void viewJobs() {
-        System.out.println("Hafsa");
+        System.out.println("Nobody");
     }
     static void searchJob() {
         System.out.println("Hafsa");
